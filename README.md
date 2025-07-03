@@ -40,19 +40,7 @@ A dynamic and interactive web app that allows users to **build custom form templ
 
 ## 📁 Folder Structure
 
-src/
-│
-├── components/
-│ ├── TemplateBuilder.jsx
-│ ├── Section.jsx
-│ ├── FormPreview.jsx
-│ ├── GeneratedForm.jsx
-│
-├── context/
-│ └── TemplateContext.jsx
-│
-├── App.jsx
-└── main.jsx
+<pre lang="markdown"><code>```bash 📁 src ├── components │ ├── FormPreview.js │ ├── GeneratedForm.js │ └── TemplateBuilder.js ├── context │ └── TemplateContext.js ├── utils │ └── storage.js ├── App.js └── index.js ``` </code></pre>
 
 
 ---
