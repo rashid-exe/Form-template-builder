@@ -43,15 +43,14 @@ A dynamic and interactive web app that allows users to **build custom form templ
 ```bash
 src/
 ├── components/
-│   ├── FormPreview.js
-│   ├── GeneratedForm.js
-│   └── TemplateBuilder.js
+│   ├── FormPreview.jsx
+│   ├── GeneratedForm.jsx
+|   ├── Section.jsx
+│   └── TemplateBuilder.jsx
 ├── context/
-│   └── TemplateContext.js
-├── utils/
-│   └── storage.js
-├── App.js
-└── index.js
+│   └── TemplateContext.jsx
+├── App.jsx
+└── main.jsx
 ```
 
 
