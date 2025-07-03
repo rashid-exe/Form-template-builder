@@ -1,12 +1,84 @@
-# React + Vite
+# 🧾 Form Template Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Demo:** [Click here to view the live app](https://form-template-builder-pi.vercel.app/)
 
-Currently, two official plugins are available:
+A dynamic and interactive web app that allows users to **build custom form templates**, preview them in real-time, and generate actual forms with validation. Templates are stored in the browser using **LocalStorage**, and users can add/edit/delete fields with drag-and-drop support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔧 Template Builder
+- Create up to **5 templates**
+- Each template can contain multiple **sections**
+- Each section can have multiple **fields**
+- Supported field types:
+  - `Label` (H1, H2, H3 styled headings)
+  - `Text`
+  - `Number`
+  - `Boolean` (Toggle switch)
+  - `Dropdown` (Enum options)
+- Drag-and-drop fields within a section
+- Delete fields
+- Live preview of the latest saved template
+- Store templates using **LocalStorage**
+
+### 📝 Form Generator
+- Select a saved template to render a form
+- Validations based on field types
+- Form submission saves data to **LocalStorage**
+
+---
+
+## 🖼️ UI Technologies
+
+- **React.js** with functional components
+- **Tailwind CSS** for styling
+- **@dnd-kit/core** and **@dnd-kit/sortable** for drag-and-drop functionality
+
+---
+
+## 📁 Folder Structure
+
+src/
+│
+├── components/
+│ ├── TemplateBuilder.jsx
+│ ├── Section.jsx
+│ ├── FormPreview.jsx
+│ ├── GeneratedForm.jsx
+│
+├── context/
+│ └── TemplateContext.jsx
+│
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/rashid-exe/form-template-builder.git
+cd form-template-builder
+
+2.Install dependencies
+npm install
+
+3.Start the app
+npm run dev
+
+The app will run locally at http://localhost:3000
+
+Deployment
+You can deploy this project easily on platforms like:
+
+Vercel
+
+Netlify
+
+
+
